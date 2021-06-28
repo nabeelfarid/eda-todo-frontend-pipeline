@@ -29,7 +29,6 @@ export class EdaTodoFrontendPipelineStack extends cdk.Stack {
           origin: new origins.S3Origin(bucketWebsite),
           viewerProtocolPolicy:
             cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
-          originRequestPolicy: cloudfront.OriginRequestPolicy.ALL_VIEWER,
         },
       }
     );

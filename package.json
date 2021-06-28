@@ -21,6 +21,13 @@
     "typescript": "~3.9.7"
   },
   "dependencies": {
+    "@aws-cdk/aws-cloudfront": "1.108.1",
+    "@aws-cdk/aws-cloudfront-origins": "1.108.1",
+    "@aws-cdk/aws-codebuild": "1.108.1",
+    "@aws-cdk/aws-codepipeline": "1.108.1",
+    "@aws-cdk/aws-codepipeline-actions": "1.108.1",
+    "@aws-cdk/aws-iam": "1.108.1",
+    "@aws-cdk/aws-s3": "1.108.1",
     "@aws-cdk/core": "1.108.1",
     "source-map-support": "^0.5.16"
   }

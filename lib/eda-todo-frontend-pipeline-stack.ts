@@ -52,7 +52,7 @@ export class EdaTodoFrontendPipelineStack extends cdk.Stack {
         new CodePipelineAction.GitHubSourceAction({
           actionName: "Checkout",
           owner: "nabeelfarid",
-          repo: "aws-todo-frontend",
+          repo: "eda-todo-frontend",
           oauthToken: cdk.SecretValue.secretsManager("GITHUB_TOKEN_FOR_AWS"), ///create token on github and save it on aws secret manager
           output: outputSources,
           branch: "master",
@@ -82,7 +82,8 @@ export class EdaTodoFrontendPipelineStack extends cdk.Stack {
                     commands: [
                       "npm update -g",
                       "npm install -g gatsby-cli",
-                      "npm install",
+                      "npm install -g yarn",
+                      "yarn",
                     ],
                   },
                   build: {
